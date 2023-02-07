@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <div class="pomodoro">
+        <div class="pomodoro-head">
+          <button class="" id="pomodoro-timer" onclick="setPomodoroTimer()">
+            Pomodoro
+          </button>
+          <button
+            class=""
+            id="short-pause-timer"
+            onclick="setShortPauseTimer()"
+          >
+            Pausa Curta
+          </button>
+          <button class="" id="long-pause-timer" onclick="setLongPauseTimer()">
+            Pausa Longa
+          </button>
+        </div>
+        <div id="timer" class="timer"></div>
+        <div class="pomodoro-foot">
+          <button id="start" onclick="start()">Start</button>
+        </div>
+      </div>
+      <div class="sound-container">
+        <div class="sound-item">
+          <img src="images/rain.svg" alt="rain" width="100" height="100" />
+          <audio controls>
+            <source src="sounds/teste.opus" type="audio/ogg" />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <div class="sound-item">
+          <img src="images/rain.svg" alt="rain" width="100" height="100" />
+          <audio controls>
+            <source src="sounds/teste.opus" type="audio/ogg" />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <div class="sound-item">
+          <img src="images/rain.svg" alt="rain" width="100" height="100" />
+          <audio controls>
+            <source src="sounds/teste.opus" type="audio/ogg" />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <div class="sound-item">sound-item</div>
+        <div class="sound-item">sound-item</div>
+        <div class="sound-item">sound</div>
+      </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
