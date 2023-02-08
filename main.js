@@ -3,7 +3,7 @@ const pomodoro = document.getElementById("pomodoro-timer");
 const shortPause = document.getElementById("short-pause-timer");
 const longPause = document.getElementById("long-pause-timer");
 const startBtn = document.getElementById("start");
-
+const alarm = document.getElementById("alarm");
 let global_timer = 0;
 let isPaused = false;
 let intervalID;
@@ -50,6 +50,9 @@ function start() {
       timer -= 1000;
       if (timer < 0) {
         clearInterval(intervalID);
+        startBtn.onclick = start;
+        startBtn.innerHTML = "Iniciar";
+        playAlarm();
       }
     }
   }, 1000);
@@ -82,4 +85,9 @@ function msToTime(duration) {
   seconds = seconds < 10 ? "0" + seconds : seconds;
 
   return hours + ":" + minutes + ":" + seconds; //+ "." + milliseconds;
+}
+
+function playAlarm() {
+  alarm.play();
+  setTimeout(() => alarm.pause(), 3000);
 }

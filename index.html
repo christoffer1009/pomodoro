@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header>
+      <img src="images/github-original.svg" alt="github" height="25" />
+      <a href="http://github.com/christoffer1009" target="_blank"
+        >christoffer1009</a
+      >
+      <img src="images/linkedin.svg" alt="linkedin" height="25" />
+      <a href="https://linkedin.com/in/christoffer-cavalcante/" target="_blank"
+        >Christoffer Cavalcante</a
+      >
+    </header>
     <main>
       <div class="pomodoro">
         <div class="pomodoro-head">
@@ -30,32 +40,63 @@
           <button id="start" onclick="start()">Start</button>
         </div>
       </div>
+      <h2>Som ambiente</h2>
       <div class="sound-container">
-        <div class="ready-player-1 player">
-          <audio>
-            <source src="sounds/soft-rain.mp3" type="audio/mpeg" />
-          </audio>
+        <audio id="alarm" src="sounds/vintage-phone-ringing.mp3"></audio>
+        <div class="sound-item">
+          <img src="images/rain.svg" alt="rain" width="100" height="100" />
+          <div class="audio-player">
+            <audio controls loop>
+              <source src="sounds/rain.ogg" type="audio/ogg" />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
         </div>
 
         <div class="sound-item">
-          <img src="images/rain.svg" alt="rain" width="100" height="100" />
-          <audio controls loop>
-            <source src="sounds/soft-rain.mp3" type="audio/mp3" />
-            Your browser does not support the audio element.
-          </audio>
+          <img src="images/fire.svg" alt="fire" width="100" height="100" />
+          <div class="audio-player">
+            <audio controls loop>
+              <source src="sounds/fire.ogg" type="audio/ogg" />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
         </div>
 
         <div class="sound-item">
-          <img src="images/rain.svg" alt="rain" width="100" height="100" />
-          <audio controls loop>
-            <source src="sounds/thunderstorm.mp3" type="audio/mp3" />
-            Your browser does not support the audio element.
-          </audio>
+          <img
+            src="images/thunder.svg"
+            alt="thunder"
+            width="100"
+            height="100"
+          />
+          <div class="audio-player">
+            <audio controls loop>
+              <source src="sounds/thunder.ogg" type="audio/ogg" />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
         </div>
 
-        <div class="sound-item">sound-item</div>
-        <div class="sound-item">sound-item</div>
-        <div class="sound-item">sound</div>
+        <div class="sound-item">
+          <img src="images/waves.svg" alt="waves" width="100" height="100" />
+          <div class="audio-player">
+            <audio controls loop>
+              <source src="sounds/waves.ogg" type="audio/ogg" />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+
+        <div class="sound-item">
+          <img src="images/wind.svg" alt="wind" width="100" height="100" />
+          <div class="audio-player">
+            <audio controls loop>
+              <source src="sounds/wind.ogg" type="audio/ogg" />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
       </div>
     </main>
     <script src="main.js"></script>
