@@ -19,6 +19,7 @@ function setLongPauseTimer() {
   pomodoro.classList.remove("selected");
   stop();
 }
+
 function setShortPauseTimer() {
   let shortPauseTimer = 5 * 60 * 1000;
   global_timer = shortPauseTimer;
@@ -28,6 +29,7 @@ function setShortPauseTimer() {
   pomodoro.classList.remove("selected");
   stop();
 }
+
 function setPomodoroTimer() {
   let pomodoroTimer = 25 * 60 * 1000;
   global_timer = pomodoroTimer;
