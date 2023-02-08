@@ -5,12 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pomodoro</title>
-
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-
     <main>
       <div class="pomodoro">
         <div class="pomodoro-head">
@@ -34,37 +31,33 @@
         </div>
       </div>
       <div class="sound-container">
+        <div class="ready-player-1 player">
+          <audio>
+            <source src="sounds/soft-rain.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+
         <div class="sound-item">
           <img src="images/rain.svg" alt="rain" width="100" height="100" />
-          <audio controls>
-            <source src="sounds/teste.opus" type="audio/ogg" />
+          <audio controls loop>
+            <source src="sounds/soft-rain.mp3" type="audio/mp3" />
             Your browser does not support the audio element.
           </audio>
         </div>
 
         <div class="sound-item">
           <img src="images/rain.svg" alt="rain" width="100" height="100" />
-          <audio controls>
-            <source src="sounds/teste.opus" type="audio/ogg" />
+          <audio controls loop>
+            <source src="sounds/thunderstorm.mp3" type="audio/mp3" />
             Your browser does not support the audio element.
           </audio>
         </div>
 
-        <div class="sound-item">
-          <img src="images/rain.svg" alt="rain" width="100" height="100" />
-          <audio controls>
-            <source src="sounds/teste.opus" type="audio/ogg" />
-            Your browser does not support the audio element.
-          </audio>
-        </div>
         <div class="sound-item">sound-item</div>
         <div class="sound-item">sound-item</div>
         <div class="sound-item">sound</div>
       </div>
     </main>
-
-    <footer></footer>
-
     <script src="main.js"></script>
   </body>
 </html>
