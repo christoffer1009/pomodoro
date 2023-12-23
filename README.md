@@ -27,4 +27,4 @@ Este é um WebApp de Técnica Pomodoro que permite aumentar sua produtividade co
 1. Clone este repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/pomodoro-webapp.git
+   git clone https://github.com/christoffer1009/pomodoro.git
