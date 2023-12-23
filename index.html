@@ -43,23 +43,30 @@
       <h2>Som ambiente</h2>
       <div class="sound-container">
         <audio id="alarm" src="sounds/vintage-phone-ringing.mp3"></audio>
+        
         <div class="sound-item">
-          <img src="images/rain.svg" alt="rain" width="100" height="100" />
+          <img src="images/rain.svg" alt="rain" class="img-svg" />
           <div class="audio-player">
-            <audio controls loop>
+            <audio id="rain" class="audio">
               <source src="sounds/rain.ogg" type="audio/ogg" />
               Seu navegador não suporta o elemento de áudio.
             </audio>
+            <img src="images/play.svg" class="play-pause-btn" id="rain-play-pause-btn" />
+            <input type="range" id="rain-volume-control" class="volume-control" max="1" step="0.1" value="1">
+
           </div>
         </div>
 
         <div class="sound-item">
-          <img src="images/fire.svg" alt="fire" width="100" height="100" />
+          <img src="images/fire.svg" alt="fire" class="img-svg"/>
           <div class="audio-player">
-            <audio controls loop>
+            <audio id="fire" loop>
               <source src="sounds/fire.ogg" type="audio/ogg" />
               Seu navegador não suporta o elemento de áudio.
             </audio>
+            <img src="images/play.svg" class="play-pause-btn" id="fire-play-pause-btn" />
+            <input type="range" id="fire-volume-control" class="volume-control" max="1" step="0.1" value="1">
+
           </div>
         </div>
 
@@ -67,34 +74,42 @@
           <img
             src="images/thunder.svg"
             alt="thunder"
-            width="100"
-            height="100"
+            class="img-svg"
           />
           <div class="audio-player">
-            <audio controls loop>
+            <audio id="thunder" loop>
               <source src="sounds/thunder.ogg" type="audio/ogg" />
               Seu navegador não suporta o elemento de áudio.
             </audio>
+            <img src="images/play.svg" class="play-pause-btn" id="thunder-play-pause-btn" />
+            <input type="range" id="thunder-volume-control" class="volume-control" max="1" step="0.1" value="1">
+
           </div>
         </div>
 
         <div class="sound-item">
-          <img src="images/waves.svg" alt="waves" width="100" height="100" />
+          <img src="images/waves.svg" alt="waves" class="img-svg" />
           <div class="audio-player">
-            <audio controls loop>
+            <audio id="waves" loop>
               <source src="sounds/waves.ogg" type="audio/ogg" />
               Seu navegador não suporta o elemento de áudio.
             </audio>
+            <img src="images/play.svg" class="play-pause-btn" id="waves-play-pause-btn" />
+            <input type="range" id="waves-volume-control" class="volume-control" max="1" step="0.1" value="1">
+
           </div>
         </div>
 
         <div class="sound-item">
-          <img src="images/wind.svg" alt="wind" width="100" height="100" />
+          <img src="images/wind.svg" alt="wind" class="img-svg" />
           <div class="audio-player">
-            <audio controls loop>
+            <audio id="wind" loop>
               <source src="sounds/wind.ogg" type="audio/ogg" />
               Seu navegador não suporta o elemento de áudio.
             </audio>
+            <img src="images/play.svg" class="play-pause-btn" id="wind-play-pause-btn" />
+            <input type="range" id="wind-volume-control" class="volume-control" max="1" step="0.1" value="1">
+
           </div>
         </div>
       </div>

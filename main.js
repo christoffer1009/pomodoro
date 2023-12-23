@@ -8,7 +8,9 @@ let global_timer = 0;
 let isPaused = false;
 let intervalID;
 
+
 setPomodoroTimer();
+setAudioControls()
 
 function setLongPauseTimer() {
   let longPauseTimer = 10 * 60 * 1000;
@@ -92,4 +94,40 @@ function msToTime(duration) {
 function playAlarm() {
   alarm.play();
   setTimeout(() => alarm.pause(), 3000);
+}
+
+function setAudioControlsById(audioId, playPauseBtnId, volumeControlId) {
+  document.addEventListener('DOMContentLoaded', function () {
+    var audio = document.getElementById(audioId);
+    var playPauseBtn = document.getElementById(playPauseBtnId);
+    var volumeControl = document.getElementById(volumeControlId);
+
+    playPauseBtn.addEventListener('click', function () {
+      if (audio.paused) {
+        audio.play();
+        playPauseBtn.src = 'images/pause.svg';
+      } else {
+        audio.pause();
+        playPauseBtn.src = 'images/play.svg';
+      }
+    });
+
+    volumeControl.addEventListener('input', function () {
+      audio.volume = volumeControl.value;
+    });
+  });
+}
+
+function setAudioControls() {
+  const audioPlayers = Array.from(document.getElementsByClassName("audio-player"))
+  console.log(audioPlayers)
+
+  audioPlayers.forEach((element, i) => {
+    var audioId = element.querySelector('audio').id;
+    var playPauseBtnIdId = element.querySelector('img').id;
+    var volumeControlId = element.querySelector('input').id;
+
+    setAudioControlsById(audioId, playPauseBtnIdId, volumeControlId)
+  })
+
 }

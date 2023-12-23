@@ -103,13 +103,13 @@ button {
   margin: 1em auto;
   padding: 20px 20px;
   display: flex;
-  align-items: end;
+  align-items: center;
   border-radius: 10px;
 }
 
 .audio-player {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -118,3 +118,13 @@ button {
   padding: 5px;
   margin-bottom: 1em;
 }
+.img-svg {
+  width: 100px;
+  height: 100px
+}
+
+.play-pause-btn {
+  width: 30px;
+  height: 30px
+}
+
