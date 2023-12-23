@@ -28,3 +28,5 @@ Este é um WebApp de Técnica Pomodoro que permite aumentar sua produtividade co
 
    ```bash
    git clone https://github.com/christoffer1009/pomodoro.git
+
+2. Abra o arquivo index.html com um navegador web
