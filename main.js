@@ -43,6 +43,7 @@ function setPomodoroTimer() {
 }
 
 function start() {
+  pomodoro.innerHTML = 'Recomeçar'
   let timer = global_timer;
   isPaused = false;
   startBtn.onclick = togglePause;
